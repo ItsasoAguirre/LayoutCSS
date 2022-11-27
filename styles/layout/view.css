@@ -1,8 +1,13 @@
 .view { 
-
+  background-color: blueviolet;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .view__content { 
+ background-color: aqua;
 
 }
 

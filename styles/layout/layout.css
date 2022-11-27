@@ -1,19 +1,30 @@
 .layout {
-  
+  display: grid;
+  grid-template-rows: 50px 1fr 40px;
+  grid-template-areas: "cabecera" "vista" "menu";
+  height: 100vh;
+  overflow: hidden;
 }
 
 .layout__header {
- 
+  grid-area: cabecera;
+  overflow: hidden;
 }
 
 .layout__menu {
-
+  grid-area: menu;
+  overflow: hidden;
 }
 
 .layout__view {
-
+  grid-area: vista;
+  overflow-y: hidden;
 }
 
 @media only screen and (min-width: 900px) {
-
+  .layout {
+     grid-template-columns: 20px 1fr;
+     grid-template-rows: 50px 1fr;
+     grid-template-areas: "cabecera cabecera" "menu vista";
+  }
 }
